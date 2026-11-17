@@ -500,8 +500,10 @@ void fileLoop() {
   if (now - lastAnim >= GALET_MS) {
     lastAnim = now;
     if (fileResult == 1 && !filePaused && !fileEnded) {
-      angG += VIT_GAUCHE; if (angG >= 360) angG -= 360;
-      angD += VIT_DROIT;  if (angD >= 360) angD -= 360;
+      angG += VIT_GAUCHE; if (angG < 0) angG -= 360;
+      angD += VIT_DROIT;  if (angD < 0) angD -= 360; 
+ //     angG += VIT_GAUCHE; if (angG >= 360) angG -= 360;  //  reverse mode
+ //     angD += VIT_DROIT;  if (angD >= 360) angD -= 360;
       drawGalets();
     }
   }
