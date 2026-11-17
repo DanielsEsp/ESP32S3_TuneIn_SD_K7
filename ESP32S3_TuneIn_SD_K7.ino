@@ -34,8 +34,8 @@
 #include "types.h"                        // Mode, ImgSlot, Scroller, RecEntry, Zone
 
 // =====================  À ADAPTER  =====================
-const char* WIFI_SSID = "Bbox-E295749E-2,4GHz";
-const char* WIFI_PASS = "Mb&2427242711";
+const char* WIFI_SSID = "SSID";
+const char* WIFI_PASS = "PASS1";
 
 // I2S -> MAX98357A
 #define I2S_BCLK 5
